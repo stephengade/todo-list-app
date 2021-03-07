@@ -1,0 +1,223 @@
+html, body {
+    font-size: 65.6%;
+}
+
+body {
+    background:rgb(182, 15, 182);
+}
+
+.app-section {
+    width: 80%;
+    max-height: 90%;
+    margin: 10rem auto auto auto;
+    border-style: solid;
+    border-color: #fff;
+    border-radius: 25px; 
+}
+
+.top-app {
+      overflow: hidden;
+     height: 100vh;
+     width: 100vw;
+
+}
+
+ .title  {
+         margin: 2rem auto;
+         text-align: center;
+        align-self: center;
+        color: #fff;
+        font-size: 1.7rem;
+        font-family: $header-text;
+        padding-left: .3rem;
+        padding-right: .3rem;
+     }
+
+.disclaimer {
+    margin: 1rem auto;
+    text-align: center;
+    color:rgba(248, 246, 246, 0.794);
+    font-family: $body-text;
+    font-size: 1.4rem;
+     padding-left: .5rem;
+    padding-right: .5rem;
+
+    span {
+        color: #fff!important;
+        font-size: 1.55rem!important;   
+    }
+}
+
+
+header {
+         font-size: 1.2rem;
+         text-align: center;
+         font-family: $header-text;
+         margin-top: 2rem;
+         margin-bottom: 2rem;
+         color:rgba(248, 246, 246, 0.794);
+         padding-left: 1rem;
+         padding-right: 1rem;
+     }
+
+
+form {
+   display: flex;
+   flex-direction: column;
+   width: 50%;
+   margin: 0 auto;
+   font-family: $body-text;
+  
+}
+
+.todo-result {
+    color: white;
+    text-align:center;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    font-family: $body-text;
+}
+
+input {
+    padding: .5rem;
+    border-radius: 10px;
+    outline: none!important;
+    caret-color: $background-color;
+    font-family: $body-text;
+    text-align: center;
+}
+
+button {
+    padding:.2rem;
+    margin-top: 1rem;
+    font-family: $header-text;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #000!important;
+        color: #fff;
+        border: none;
+    }
+
+    i {
+        color: $primary-color;
+    }
+}
+
+.profile-img {
+    width: 100%;
+    text-align: center;
+    
+    img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-top: -5rem;
+        border-style: solid;
+        border-color: #fff;
+    }
+    
+}
+
+// Input buttons 
+
+.todo-result {
+      width: 90%;
+      margin: 3rem auto;
+    
+    .todo-container {
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
+        background-color: rgb(151, 29, 29);
+        transition: all .5s ease;
+      
+    }
+
+    li {
+        font-size: 2rem;
+        align-self: center;
+        flex: 1;
+        text-align: left;
+        padding-left: 2rem;
+        border-bottom-style: solid;
+        
+    }
+}
+
+.todo-buttons {
+    background-color: rgb(26, 26, 112);
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    
+
+}
+
+.delete-button, .check-button {
+  padding: .5rem;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  align-self: center;
+  font-size: 1.2rem;
+}
+
+.fa-trash-alt, .fa-check {
+    pointer-events: none;
+}
+
+
+
+.check-button {
+  margin-right: 1rem;
+    i {
+        color: green;
+    }
+}
+
+.done {
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+.fade-down {
+    opacity: 0;
+    transform: translateX(8rem) rotateZ(-20deg);
+}
+
+select {
+    appearance: none;
+    outline: none;
+    border: none;
+
+    color:rgb(151, 29, 29);
+    cursor: pointer;
+    width: 10rem;
+    height: 2.5rem;
+    text-align: center;
+     font-family: $header-text;
+}
+
+.select {
+    margin: 1rem auto;
+    position: relative;
+    transition: all .5s ease;
+
+    &::after {
+        content: "👇";
+        background-color: rgb(151, 29, 29);
+        position: absolute;
+        right:0;
+        top: 0;
+        font-size: 1.5rem;
+        padding: .1rem;
+        pointer-events: none;
+    }
+}
+
+.select:hover::after {
+     background-color:rgb(26, 26, 112);
+}
